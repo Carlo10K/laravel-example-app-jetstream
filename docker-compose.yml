@@ -5,8 +5,7 @@ services:
   mysql:
     image: mysql:5
     environment:
-      - MYSQL_DATABASE=posts_db
-      - MYSQL_USER=root
+      - MYSQL_DATABASE=courses_dbs
       - MYSQL_ROOT_PASSWORD=Test12345.
       - MYSQL_PORT=3306
     ports:
