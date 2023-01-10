@@ -58,4 +58,10 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+
+    public function getAvatarAttribute(){
+        //$email = md5($this->email);
+        $name = $this->name;
+        return "https://api.dicebear.com/5.x/pixel-art/svg?seed=".$name;
+    }
 }
